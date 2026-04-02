@@ -18,6 +18,7 @@ A QA portfolio project covering API, performance, and UI testing.
 - Chained requests using environment variables
 - Assertions on status codes, response body, and response time
 - Negative test cases (invalid inputs, missing fields, wrong token)
+- ![API Test Results](screenshots/api-test-results.png)
 
 ## Status
 🟡 In Progress
