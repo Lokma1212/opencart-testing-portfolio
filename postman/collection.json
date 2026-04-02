@@ -107,6 +107,97 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "Invalid Booking ID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Create Booking — Missing Fields",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Mohamed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/booking",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "booking"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Booking — Invalid Token",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Returns 403 for invalid token\", function () {\r",
+              "    pm.response.to.have.status(403);\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"firstname\": \"Ahmed\",\r\n    \"lastname\": \"Lokma\",\r\n    \"totalprice\": 150,\r\n    \"depositpaid\": true,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2025-06-01\",\r\n        \"checkout\": \"2025-06-07\"\r\n    },\r\n    \"additionalneeds\": \"Breakfast\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/booking/1?Cookie=token=invalidtoken123",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "booking",
+            "1"
+          ],
+          "query": [
+            {
+              "key": "Cookie",
+              "value": "token=invalidtoken123",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Booking — No Token",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
     }
   ]
 }
