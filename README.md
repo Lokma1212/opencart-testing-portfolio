@@ -16,9 +16,13 @@ A QA portfolio project covering API, performance, and UI testing.
 ## API Testing (Restful Booker)
 - CRUD operations (Create, Read, Update, Delete bookings)
 - Chained requests using environment variables
+- Auto token refresh via Pre-request script
 - Assertions on status codes, response body, and response time
 - Negative test cases (invalid inputs, missing fields, wrong token)
-- ![API Test Results](screenshots/api-test-results.png)
+- 1 bug found and documented
+
+### Results
+![API Test Results](screenshots/api-test-results.png)
 
 ## Status
 🟡 In Progress
