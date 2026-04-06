@@ -1,0 +1,28 @@
+{
+	"id": "8eeb0ee4-91ee-4001-b8b8-232bd0b3e0cb",
+	"name": "Restful Env",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "booking_id",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-04-02T09:56:38.794Z",
+	"_postman_exported_using": "Postman/11.86.5"
+}
