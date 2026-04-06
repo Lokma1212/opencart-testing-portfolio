@@ -24,5 +24,23 @@ A QA portfolio project covering API, performance, and UI testing.
 ### Results
 ![API Test Results](screenshots/api-test-results.png)
 
+## Performance Testing (OpenCart)
+
+### Test Scenarios
+| Scenario | Users | Avg Response | Error Rate |
+|---|---|---|---|
+| Smoke Test | 2 | 137ms | 0.00% |
+| Load Test - Low | 10 | 147ms | 0.00% |
+| Load Test - Medium | 50 | 122ms | 0.00% |
+| Load Test - High | 100 | 129ms | 0.00% |
+| Stress Test | 200 | 120ms | 0.00% |
+
+### Key Findings
+- OpenCart handled up to 200 concurrent users with 0% error rate
+- Average response time stayed under 150ms across all scenarios
+- APDEX score of 1.000 — perfect user satisfaction rating
+- No performance degradation detected under stress conditions
+
+  
 ## Status
 🟡 In Progress
