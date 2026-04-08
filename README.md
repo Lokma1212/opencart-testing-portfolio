@@ -23,7 +23,7 @@ A comprehensive QA portfolio project covering API, Performance, and UI testing.
 ### Bug Found:
 - **Bug 001:** POST /booking returns 500 instead of 400 when required fields are missing
 
-![API Test Results](screenshots/api-test-results.png)
+![API Test Results](screenshots/Screenshot_15_Test.png)
 
 ---
 
